@@ -1,0 +1,219 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #2d3c49; 
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 5px solid #7d97ad;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+	margin: 0;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.banner{
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.fw_header {
+    color: #7d97ad;
+    font-size: 2em;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.flex_container {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.udacity-logo {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    fill: #02b3e4;
+}
+
+.feature_1,
+.feature_2, 
+.feature_3 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-title {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .udacity-logo {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 90px;
+        height: 90px;
+    }
+
+    .header_text {
+        width: 520px;
+        margin-left: auto;
+        display: inline-block;
+        text-align: right;
+    }
+
+    h1 {
+        font-size: 3.5em;
+
+    }
+    
+    h2 {
+        font-size: 1.25em;
+    }
+
+    .feature_1, 
+    .feature_2, 
+    .feature_3 {
+        width: 30%;
+        height: auto;
+    }
+
+    .feature_2 {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+/* Style the Image Used to Trigger the Modal */
+.modal-preview-container {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal_preview {
+    max-width: 100%;
+    height: auto;
+}
+
+/* The Modal (background) */
+.modal_1, 
+.modal_2, 
+.modal_3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 90%;
+    max-width: 899px;
+    color: #ffffff;
+}
+
+/* Modal Header Container*/
+.modal-header {
+    flex: wrap;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+.m-h-wrapper {
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+
+.m-h-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.modal-image {
+    width: 100%;
+}
+
+.modal-footer {
+    -webkit-margin: 0;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close_1, 
+.close_2, 
+.close_3 {
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.close_1:hover, 
+.close_2:hover, 
+.close_3:hover {
+    cursor: pointer;
+    color: #7d97ad;
+}
